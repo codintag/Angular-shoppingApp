@@ -12,7 +12,7 @@ module.exports = function() {
         categories: [
             {id: 1, name: "Phone"},
             {id: 2, name: "PC"},
-            {id: 3, name: "Electronique"},
+            {id: 3, name: "Electronic"},
         ],
         orders: [],
     }
