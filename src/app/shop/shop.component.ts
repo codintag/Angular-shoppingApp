@@ -6,7 +6,10 @@ import { ProductRepository } from '../model/product.repository';
 
 @Component({
     selector: "shop",
-    templateUrl: "shop.component.html"
+    templateUrl: "shop.component.html",
+    styles: [`
+    .pt-100 {padding-top: 100px;}
+    .imgHeight {height: 350px; padding-top: 10px;}`]
 })
 
 export class ShopComponent {
@@ -15,11 +18,11 @@ export class ShopComponent {
         private categoryRepository: CategoryRepository
     ) {}
 
-    getProducts(): Product[] {
+    get getProducts(): Product[] {
         return this.productRepository.getProducts();
     }
 
-    getCategories(): Category[] {
+    get getCategories(): Category[] {
         return this.categoryRepository.getCategories();
     }
 }
